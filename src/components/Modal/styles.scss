@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 12px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 87, 155, 0.6);
+
+  &_inner {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    color: var(--main-text-color);
+  }
+
+  &_close {
+    position: absolute;
+    z-index: 30;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(225, 245, 254, 0.6) url('./assets/close.svg') no-repeat center center;
+    background-size: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

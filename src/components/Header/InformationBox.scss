@@ -1,0 +1,43 @@
+.form-box {
+  padding: 32px 44px;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--main-light-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  grid-column: span 2;
+}
+
+.form-input {
+  padding: 8px 18px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid var(--main-bg-color);
+}
+
+.form-range {
+  display: flex;
+  align-items: center;
+}
+
+.form-submit {
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--main-bg-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: var(--main-light-color);
+  grid-column: 2;
+
+  &:hover, &:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+}

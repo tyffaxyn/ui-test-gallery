@@ -1,0 +1,40 @@
+.like-box {
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--main-text-color);
+}
+
+.like-button {
+  margin-left: 6px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &.is-liked {
+    animation: pop 0.4s ease-in forwards;
+  }
+}
+
+.like-icon {
+  transition: all 0.2s ease-in;
+  fill: #262626;
+
+  .is-liked & {
+    fill: #e91e63;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

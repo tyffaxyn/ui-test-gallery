@@ -1,0 +1,33 @@
+:root {
+    --main-text-color: #323232;
+    --main-bg-color: #0288D1;
+    --main-action-color: #ad1457;
+    --main-light-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+a:focus, button:focus {
+    outline: none;
+}

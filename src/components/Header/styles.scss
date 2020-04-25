@@ -1,0 +1,30 @@
+.app-header {
+  padding: 12px 12px;
+  font-size: 20px;
+  background: linear-gradient(110deg, var(--main-action-color), var(--main-bg-color));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: var(--main-light-color);
+
+  &_inner {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.action-button {
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--main-action-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: var(--main-light-color);
+
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+}
