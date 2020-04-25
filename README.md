@@ -1,3 +1,7 @@
+# Browser
+
+Checked on Google Chrome - Version 81.0.4044.122 (Official Build)
+
 # Set up UI Test
 
 This repo is a slightly modified Create React App and an express server which serves a JSON feed of images.
